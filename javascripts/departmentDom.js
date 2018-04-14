@@ -1,7 +1,7 @@
 const events = require('./events');
 const outputString = document.getElementById('departments');
 
-const printToDom = (deptArray) => {
+const printToDeptDom = (deptArray) => {
   outputString.innerHTML = buildDomString(deptArray);
   events.addDeptEvents();
 };
@@ -19,4 +19,4 @@ const buildDomString = (deptArray) => {
   return deptCard;
 };
 
-module.exports = printToDom;
+module.exports = printToDeptDom;
