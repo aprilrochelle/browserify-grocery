@@ -1,9 +1,9 @@
 const callDepartments = require('./departments');
-const printToDom = require('./dom');
+const deptDom = require('./departmentDom');
 
 function whenDeptsLoad () {
   const deptData = JSON.parse(this.responseText).departments;
-  printToDom(deptData);
+  deptDom(deptData);
 };
 
 function ifDeptsFail () {
