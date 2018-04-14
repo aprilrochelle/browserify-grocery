@@ -1,1 +1,3 @@
-console.log('whatuppp!');
+const data = require('./data');
+
+data.initializer();
