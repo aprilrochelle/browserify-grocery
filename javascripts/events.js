@@ -16,11 +16,15 @@ const hideDeptName = (e) => {
   deptName.classList.add('hide');
 };
 
+const showItems = (e) => {
+  console.log('data-id', e.target.parentNode.children[1].dataset.departmentId);
+};
+
 const addDeptEvents = () => {
   for (let i = 0; i < deptCards.length; i++) {
     deptCards[i].addEventListener('mouseenter', showDeptName);
     deptCards[i].addEventListener('mouseleave', hideDeptName);
-    // deptCards[i].addEventListener('click', showItems);
+    deptCards[i].addEventListener('click', showItems);
   };
 };
 

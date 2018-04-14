@@ -12,7 +12,7 @@ const buildDomString = (deptArray) => {
   deptArray.forEach((dept) => {
     deptCard += `<div class="col-md-3 department">`;
     deptCard +=   `<img src="${dept.img}">`;
-    deptCard +=   `<h3 class="hide department-title data-department-id="${dept.id}">${dept.name}</h3>`;
+    deptCard +=   `<h3 class="hide department-title" data-department-id="${dept.id}">${dept.name}</h3>`;
     deptCard += `</div>`;
   });
   deptCard += `</div></div>`;
