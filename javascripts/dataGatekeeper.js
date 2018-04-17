@@ -11,7 +11,7 @@ const whenDeptsLoad = function () {
 
 const whenItemsLoad = function () {
   const itemData = JSON.parse(this.responseText).items;
-  console.log(itemData);
+  data.setItems(itemData);
 };
 
 const ifLoadFails = function () {
