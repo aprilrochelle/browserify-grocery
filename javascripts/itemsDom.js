@@ -1,7 +1,9 @@
+const itemEvents = require('./itemEvents');
 const itemsOutputDiv = document.getElementById('items');
 
 const printToDom = (items) => {
   itemsOutputDiv.innerHTML = itemsDomString(items);
+  itemEvents();
 };
 
 const itemsDomString = (items) => {
